@@ -15,20 +15,21 @@ class Game():
           pygame.display.set_caption(self.game_caption)
           self.clock = pygame.time.Clock()
 
+          print ("[!] Loading Images... Expect some sRGB errors coz I cba to crush them!")
           self.images = {
-          "x": pygame.image.load("x.png"),
-          "y": pygame.image.load("y.png"),
-          "-x": pygame.image.load("-x.png"),
-          "-y": pygame.image.load("-y.png"),
-          "bird": pygame.image.load("bird.png"),
-          "explosion": pygame.image.load("explosion.jpg"),
-          "health0": pygame.image.load("health0.png"),
-          "health1": pygame.image.load("health1.png"),
-          "health2": pygame.image.load("health2.png"),
-          "health3": pygame.image.load("health3.png"),
-          "farage": pygame.image.load("farage.png"),
-          "union jack": pygame.image.load("union_jack.jpg"),
-          "EU": pygame.image.load("EU.png")
+          "x": pygame.image.load("./Assets/x.png"),
+          "y": pygame.image.load("./Assets/y.png"),
+          "-x": pygame.image.load("./Assets/-x.png"),
+          "-y": pygame.image.load("./Assets/-y.png"),
+          "bird": pygame.image.load("./Assets/bird.png"),
+          "explosion": pygame.image.load("./Assets/explosion.jpg"),
+          "health0": pygame.image.load("./Assets/health0.png"),
+          "health1": pygame.image.load("./Assets/health1.png"),
+          "health2": pygame.image.load("./Assets/health2.png"),
+          "health3": pygame.image.load("./Assets/health3.png"),
+          "farage": pygame.image.load("./Assets/farage.png"),
+          "union jack": pygame.image.load("./Assets/union_jack.jpg"),
+          "EU": pygame.image.load("./Assets/EU.png")
           }
 
           self.keys = {"w": 0, "a": 0, "s": 0, "d": 0, "f": 0}
